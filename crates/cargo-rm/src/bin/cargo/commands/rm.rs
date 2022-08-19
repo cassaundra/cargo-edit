@@ -10,6 +10,7 @@ pub fn cli() -> clap::Command<'static> {
                 .takes_value(true)
                 .value_name("DEP_ID")
                 .action(clap::ArgAction::Append)
+                .multiple_values(true)
                 .help("Reference to a package to remove as a dependency")
                 .required(true),
             clap::Arg::new("pkg_id")
@@ -29,19 +30,19 @@ pub fn cli() -> clap::Command<'static> {
         .args([
             clap::Arg::new("dev")
                 .long("dev")
-                .help("Remove as a development dependency")
+                .help("Remove as development dependency")
                 .conflicts_with("build")
                 .group("section"),
             clap::Arg::new("build")
                 .long("build")
-                .help("Remove as a build dependency")
+                .help("Remove as build dependency")
                 .conflicts_with("dev")
                 .group("section"),
             clap::Arg::new("target")
                 .long("target")
                 .help("Remove as dependency from the given target platform")
-                .value_parser(clap::builder::NonEmptyStringValueParser::new())
-                .group("section"),
+                .takes_value(true)
+                .value_parser(clap::builder::NonEmptyStringValueParser::new()),
         ])
 }
 
