@@ -49,10 +49,6 @@ pub struct RmArgs {
 }
 
 impl RmArgs {
-    pub fn exec(&self) -> CargoResult<()> {
-        exec(self)
-    }
-
     /// Get dependency section
     pub fn get_section(&self) -> Vec<String> {
         let section_name = if self.dev {
@@ -76,7 +72,11 @@ impl RmArgs {
 #[derive(Copy, Clone, Debug, PartialEq, Eq, clap::ArgEnum)]
 enum UnstableOptions {}
 
-fn exec(args: &RmArgs) -> CargoResult<()> {
+pub fn exec(args: &RmArgs) -> CargoResult<()> {
+    rm(args)
+}
+
+fn rm(args: &RmArgs) -> CargoResult<()> {
     let manifest_path = if let Some(ref pkgid) = args.pkgid {
         let pkg = manifest_from_pkgid(args.manifest_path.as_deref(), pkgid)?;
         Cow::Owned(Some(pkg.manifest_path.into_std_path_buf()))

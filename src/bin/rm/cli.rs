@@ -10,7 +10,7 @@ pub enum Command {
 impl Command {
     pub fn exec(self) -> CargoResult<()> {
         match self {
-            Self::Rm(add) => add.exec(),
+            Self::Rm(rm) => crate::rm::exec(&rm),
         }
     }
 }
