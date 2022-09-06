@@ -39,8 +39,8 @@ path = "src/cargo/lib.rs"
 
 [dependencies]
 anyhow = "1.0"
-cargo-util.git = "https://github.com/rust-lang/cargo"
-cargo.git = "https://github.com/rust-lang/cargo"
+cargo-util = { git = "https://github.com/cassaundra/cargo", branch = "edit-refactor-demo" }
+cargo = { git = "https://github.com/cassaundra/cargo", branch = "edit-refactor-demo" }
 cargo_metadata = "0.15.0"
 clap = { version = "3.2", features = ["wrap_help"], optional = true }
 concolor-control = { version = "0.0.7", default-features = false }
@@ -59,8 +59,8 @@ url = "2.2.2"
 
 [dev-dependencies]
 snapbox = { version = "0.3.3", features = ["diff", "path"] }
-cargo-test-macro.git = "https://github.com/rust-lang/cargo"
-cargo-test-support.git = "https://github.com/rust-lang/cargo"
+cargo-test-macro = { git = "https://github.com/cassaundra/cargo", branch = "edit-refactor-demo" }
+cargo-test-support = { git = "https://github.com/cassaundra/cargo", branch = "edit-refactor-demo" }
 
 [features]
 default = [
