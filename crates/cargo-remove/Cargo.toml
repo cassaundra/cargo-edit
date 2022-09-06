@@ -47,7 +47,7 @@ concolor-control = { version = "0.0.7", default-features = false }
 crates-index = "0.18.9"
 dirs-next = "2.0.0"
 dunce = "1.0"
-git2 = "0.14"
+git2 = "0.15"
 indexmap = "1"
 pathdiff = "0.2"
 semver = "1.0.0"

@@ -146,7 +146,7 @@ dependencies = [
 [[package]]
 name = "cargo"
 version = "0.66.0"
-source = "git+https://github.com/rust-lang/cargo#9ded34a558a900563b0acf3730e223c649cf859d"
+source = "git+https://github.com/rust-lang/cargo#646e9a0b9ea8354cc409d05f10e8dc752c5de78e"
 dependencies = [
  "anyhow",
  "atty",
@@ -249,7 +249,7 @@ dependencies = [
 [[package]]
 name = "cargo-platform"
 version = "0.1.2"
-source = "git+https://github.com/rust-lang/cargo#9ded34a558a900563b0acf3730e223c649cf859d"
+source = "git+https://github.com/rust-lang/cargo#646e9a0b9ea8354cc409d05f10e8dc752c5de78e"
 dependencies = [
  "serde",
 ]
@@ -284,12 +284,12 @@ dependencies = [
 [[package]]
 name = "cargo-test-macro"
 version = "0.1.0"
-source = "git+https://github.com/rust-lang/cargo#9ded34a558a900563b0acf3730e223c649cf859d"
+source = "git+https://github.com/rust-lang/cargo#646e9a0b9ea8354cc409d05f10e8dc752c5de78e"
 
 [[package]]
 name = "cargo-test-support"
 version = "0.1.0"
-source = "git+https://github.com/rust-lang/cargo#9ded34a558a900563b0acf3730e223c649cf859d"
+source = "git+https://github.com/rust-lang/cargo#646e9a0b9ea8354cc409d05f10e8dc752c5de78e"
 dependencies = [
  "anyhow",
  "cargo-test-macro",
@@ -313,7 +313,7 @@ dependencies = [
 [[package]]
 name = "cargo-util"
 version = "0.2.1"
-source = "git+https://github.com/rust-lang/cargo#9ded34a558a900563b0acf3730e223c649cf859d"
+source = "git+https://github.com/rust-lang/cargo#646e9a0b9ea8354cc409d05f10e8dc752c5de78e"
 dependencies = [
  "anyhow",
  "core-foundation",
@@ -367,9 +367,9 @@ checksum = "fff857943da45f546682664a79488be82e69e43c1a7a2307679ab9afb3a66d2e"
 
 [[package]]
 name = "clap"
-version = "3.2.17"
+version = "3.2.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29e724a68d9319343bb3328c9cc2dfde263f4b3142ee1059a9980580171c954b"
+checksum = "23b71c3ce99b7611011217b366d923f1d0a7e07a92bb2dbf1e84508c673ca3bd"
 dependencies = [
  "atty",
  "bitflags",
@@ -385,9 +385,9 @@ dependencies = [
 
 [[package]]
 name = "clap_derive"
-version = "3.2.17"
+version = "3.2.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "13547f7012c01ab4a0e8f8967730ada8f9fdf419e8b6c792788f39cf4e46eefa"
+checksum = "ea0c8bce528c4be4da13ea6fead8965e95b6073585a2f05204bd8f4119f82a65"
 dependencies = [
  "heck",
  "proc-macro-error",
@@ -515,7 +515,7 @@ dependencies = [
 [[package]]
 name = "crates-io"
 version = "0.34.0"
-source = "git+https://github.com/rust-lang/cargo#9ded34a558a900563b0acf3730e223c649cf859d"
+source = "git+https://github.com/rust-lang/cargo#646e9a0b9ea8354cc409d05f10e8dc752c5de78e"
 dependencies = [
  "anyhow",
  "curl",
@@ -785,9 +785,9 @@ dependencies = [
 
 [[package]]
 name = "git2"
-version = "0.14.4"
+version = "0.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d0155506aab710a86160ddb504a480d2964d7ab5b9e62419be69e0032bc5931c"
+checksum = "2994bee4a3a6a51eb90c218523be382fd7ea09b16380b9312e9dbe955ff7c7d1"
 dependencies = [
  "bitflags",
  "libc",
@@ -800,9 +800,9 @@ dependencies = [
 
 [[package]]
 name = "git2-curl"
-version = "0.15.0"
+version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ee51709364c341fbb6fe2a385a290fb9196753bdde2fc45447d27cd31b11b13"
+checksum = "ed817a00721e2f8037ba722e60358d4956dae9cca10315fc982f967907d3b0cd"
 dependencies = [
  "curl",
  "git2",
@@ -1025,9 +1025,9 @@ checksum = "8371e4e5341c3a96db127eb2465ac681ced4c433e01dd0e938adbef26ba93ba5"
 
 [[package]]
 name = "libgit2-sys"
-version = "0.13.4+1.4.2"
+version = "0.14.0+1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d0fa6563431ede25f5cc7f6d803c6afbc1c5d3ad3d4925d12c882bf2b526f5d1"
+checksum = "47a00859c70c8a4f7218e6d1cc32875c4b55f6799445b842b0d8ed5e4c3d959b"
 dependencies = [
  "cc",
  "libc",
