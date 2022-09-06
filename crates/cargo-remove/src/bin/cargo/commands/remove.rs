@@ -1,8 +1,8 @@
 use cargo::core::dependency::DepKind;
 use cargo::util::command_prelude::*;
+use cargo::util::edit::manifest::DepTable;
 
 use cargo_remove::ops::cargo_remove::remove;
-use cargo_remove::ops::cargo_remove::DepTable;
 use cargo_remove::ops::cargo_remove::RemoveOptions;
 
 pub fn cli() -> clap::Command<'static> {

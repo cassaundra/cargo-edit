@@ -1,18 +1,11 @@
 //! Core of cargo-remove command
 
-mod dependency;
-mod manifest;
-mod metadata;
-
 use cargo::core::Package;
 use cargo::CargoResult;
 use cargo::Config;
 
-pub use self::dependency::Dependency;
-pub use self::dependency::RegistrySource;
-pub use self::manifest::DepTable;
-pub use self::manifest::LocalManifest;
-pub use self::manifest::Manifest;
+use cargo::util::edit::manifest::DepTable;
+use cargo::util::edit::manifest::LocalManifest;
 
 /// Remove a dependency from a Cargo.toml manifest file.
 #[derive(Debug)]
